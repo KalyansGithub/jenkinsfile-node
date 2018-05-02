@@ -1,6 +1,9 @@
 node(){
 
-stage "build"
-stage "testin"
+  stage "SCM Checkout"{
+      checkout scm;
+  }
+stage "Build"
+stage "testing"
 
 }
