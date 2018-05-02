@@ -4,8 +4,8 @@ node(){
     checkout scm
   
   stage ' Env Details'
-  def branchName = "master"
-  if (branchName.equals("master")){
+  #def branchName = "master"
+  if (env.BRANCH_NAME.equals("master")){
   echo "MASTER"
   }
   stage 'testing'
