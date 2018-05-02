@@ -1,6 +1,6 @@
 node(){
 
-  stage 'SCM Checkout'{
+  stage 'clone'{
       checkout scm
   }
 stage 'Build'
