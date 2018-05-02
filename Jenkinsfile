@@ -1,7 +1,7 @@
 node(){
 
   stage "SCM Checkout"{
-      checkout scm;
+      checkout scm
   }
 stage "Build"
 stage "testing"
