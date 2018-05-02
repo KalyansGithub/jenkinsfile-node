@@ -5,7 +5,7 @@ node(){
   
   stage ' Env Details'
   //def branchName = "master"
-   echo "My branch is: ${env.BRANCH_NAME}"
+   echo  ${env.BRANCH_NAME}
 
   if (env.BRANCH_NAME.equals("master")){
   echo "MASTER"
