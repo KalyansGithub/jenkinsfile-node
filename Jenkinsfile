@@ -11,5 +11,9 @@ node(){
   echo "MASTER"
   }
   stage 'testing'
+  
+  //Added new stage
+  stage 'deployment'
+  
 
 }
