@@ -15,5 +15,5 @@ node(){
   //Added new stage
   stage 'deployment'
   
-
+sh 'mvn clean'
 }
