@@ -13,6 +13,7 @@ node(){
   stage 'testing'
   
   //Added new stage
+  //New commit on 7th July
   stage 'deployment'
   bat 'mvn clean'
 }
