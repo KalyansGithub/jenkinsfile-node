@@ -17,6 +17,5 @@ node(){
   //Added new stage
   //New commit on 7th July---newly added
   stage('deployment'){
-  bat 'mvn clean'
-  }
+  echo " deploy"
 }
