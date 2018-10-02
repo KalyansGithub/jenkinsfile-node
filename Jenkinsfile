@@ -1,19 +1,22 @@
 node(){
 
-  stage 'clone'
+  stage ('clone'){
     checkout scm
-  
-  stage ' Env Details'
+  }
+  stage (' Env Details'){
   //def branchName = "master"
   echo  "Branch name is :${env.JOB_NAME}"
 
   if ("${env.BRANCH_NAME}".equals("master")){
   echo "MASTER"
+  }}
+  stage ('testing'){
+  echo "testing"
   }
-  stage 'testing'
   
   //Added new stage
   //New commit on 7th July---newly added
-  stage 'deployment'
+  stage('deployment'){
   bat 'mvn clean'
+  }
 }
