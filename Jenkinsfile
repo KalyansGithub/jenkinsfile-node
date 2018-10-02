@@ -19,3 +19,4 @@ node(){
   stage('deployment'){
   echo " deploy"
 }
+}
